@@ -48,7 +48,7 @@ const ProductHome = () => {
             onError={(e) => { e.target.src = "/fallback-image.jpg"; }}
           />
           <h2 className="text-lg font-semibold mt-2">{product.title}</h2>
-          <p className="text-gray-600">{product.description}</p>
+          <p className="text-gray-600 line-clamp-1">{product.description}</p>
 
        
           <div className="mt-2">

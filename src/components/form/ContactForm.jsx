@@ -4,8 +4,7 @@ function ContactForm() {
   const { formData, errors, successMessage, handleChange, handleSubmit } = useContactForm();
 
   return (
-    <div className="w-full mx-auto bg-white shadow-lg p-6 rounded-lg">
-      <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">Contact Us</h2>
+    <div className="w-full mx-auto bg-white p-6 rounded-lg">
 
       {successMessage && <p className="text-green-500 text-center">{successMessage}</p>}
 
@@ -59,7 +58,7 @@ function ContactForm() {
             name="body"
             value={formData.body}
             onChange={handleChange}
-            className="w-full p-2 border rounded-lg focus:ring focus:ring-gray-800"
+            className="w-full p-2 border rounded-lg focus: focus:ring-gray-800"
             required
           />
           {errors.body && <p className="text-red-500 text-sm">{errors.body}</p>}
