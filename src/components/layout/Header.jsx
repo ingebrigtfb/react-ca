@@ -5,7 +5,7 @@ import logo from "/src//assets/logo-ecom.png"
 
 const Header = () => {
     return (
-        <header className="bg-white">
+        <header className="bg-white sticky top-0 z-50">
             <div className="flex flex-row justify-between px-6 items-center h-[140px] max-w-[1400px] mx-auto">
             <div className="text-black">
                 <Link to="/">
