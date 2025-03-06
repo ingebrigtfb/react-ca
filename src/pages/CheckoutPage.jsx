@@ -77,7 +77,7 @@ const CheckoutPage = () => {
           <h3 className="text-xl font-semibold">Total: ${totalPrice.toFixed(2)}</h3>
 
           {/* Checkout Form */}
-          <form onSubmit={handleSubmit} className="mt-6 bg-white p-4 shadow-md rounded-lg">
+          <form onSubmit={handleSubmit} className="mt-6 bg-white p-4 rounded-lg">
             <h3 className="text-lg font-semibold mb-3">Checkout Details</h3>
 
             <label className="block mb-2">
