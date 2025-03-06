@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build" # or "yarn build" if using Yarn
+  publish = "dist" # Vite outputs build files to 'dist' by default
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
