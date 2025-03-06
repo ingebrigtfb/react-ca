@@ -18,7 +18,7 @@ function ContactForm() {
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
-            className="w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+            className="w-full p-2 border rounded-lg focus:ring focus:ring-gray-800"
             required
           />
           {errors.fullName && <p className="text-red-500 text-sm">{errors.fullName}</p>}
@@ -32,7 +32,7 @@ function ContactForm() {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+            className="w-full p-2 border rounded-lg focus:ring focus:ring-gray-800"
             required
           />
           {errors.subject && <p className="text-red-500 text-sm">{errors.subject}</p>}
@@ -46,7 +46,7 @@ function ContactForm() {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+            className="w-full p-2 border rounded-lg focus:ring focus:ring-gray-800"
             required
           />
           {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
@@ -59,7 +59,7 @@ function ContactForm() {
             name="body"
             value={formData.body}
             onChange={handleChange}
-            className="w-full p-2 border rounded-lg focus:ring focus:ring-blue-300"
+            className="w-full p-2 border rounded-lg focus:ring focus:ring-gray-800"
             required
           />
           {errors.body && <p className="text-red-500 text-sm">{errors.body}</p>}
@@ -68,7 +68,7 @@ function ContactForm() {
 
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition"
+          className="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition cursor-pointer"
         >
           Send Message
         </button>

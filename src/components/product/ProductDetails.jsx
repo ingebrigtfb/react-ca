@@ -37,7 +37,7 @@ const ProductDetails = () => {
     <div className="p-4 max-w-xl mx-auto">
       <img 
         src={product.image?.url} 
-        alt={product.image?.alt || "Product Image"} 
+        alt={product.image?.alt || ""} 
         className="w-full h-64 object-cover rounded-lg"
       />
       <h1 className="text-2xl font-bold mt-4">{product.title}</h1>
@@ -56,7 +56,7 @@ const ProductDetails = () => {
 
       <button 
         onClick={() => addToCart(product)} 
-        className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+        className="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition cursor-pointer"
       >
         Add to Cart
       </button>

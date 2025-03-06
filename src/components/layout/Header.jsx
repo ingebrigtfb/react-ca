@@ -4,13 +4,13 @@ import Cart from "./Cart";
 
 const Header = () => {
     return (
-        <header className="bg-gray-700">
+        <header className="bg-white">
             <div className="flex flex-row justify-between px-6 items-center h-[140px] max-w-[1400px] mx-auto">
-            <div className="text-white">
-                <Link to="/" className="text-lg">E-commerce</Link>
+            <div className="text-black">
+                <Link to="/"><img src="src/assets/logo-ecom.png" className="w-[160px]" alt="logo" /></Link>
             </div>
             <nav>
-            <ul className="flex flex-row gap-6 text-white">
+            <ul className="flex flex-row gap-6 text-black">
                 <li>
                     <Link to="/" className="text-lg">Home</Link>
                 </li>

@@ -50,20 +50,20 @@ const CheckoutPage = () => {
             <div className="flex items-center">
               <button
                 onClick={() => decreaseQuantity(item.id)}
-                className="ml-2 px-2 text-yellow-500 hover:text-yellow-700"
+                className="ml-2 px-2 text-yellow-500 hover:text-yellow-700 cursor-pointer"
               >
                 ➖
               </button>
               <span className="text-lg font-bold px-2">{item.quantity}</span>
               <button
                 onClick={() => addToCart(item)}
-                className="ml-2 px-2 text-green-500 hover:text-green-700"
+                className="ml-2 px-2 text-green-500 hover:text-green-700 cursor-pointer"
               >
                 ➕
               </button>
               <button
                 onClick={() => removeFromCart(item.id)}
-                className="ml-4 text-red-500 hover:text-red-700"
+                className="ml-4 text-red-500 hover:text-red-700 cursor-pointer"
               >
                 ❌
               </button>

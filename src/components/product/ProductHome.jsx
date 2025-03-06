@@ -68,13 +68,13 @@ const ProductHome = () => {
 
           <button
             onClick={() => addToCart(product)}
-            className="bg-blue-500 text-white px-4 py-2 mt-3 rounded hover:bg-blue-600 w-full cursor-pointer"
+            className="bg-black text-white px-4 py-2 mt-3 rounded hover:bg-gray-800 w-full cursor-pointer"
           >
             Add to Cart
           </button>
           <Link
             to={`/product/${product.id}`}
-            className="block text-center mt-2 text-blue-500"
+            className="block text-center mt-2 text-black hover:underline"
           >
             View Details
           </Link>

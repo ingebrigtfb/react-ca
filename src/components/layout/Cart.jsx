@@ -13,7 +13,7 @@ const Cart = () => {
     >
       <FaShoppingCart className="text-2xl cursor-pointer"></FaShoppingCart>
       {cart.length > 0 && (
-        <span className="ml-2 bg-red-500 text-white text-sm px-2 py-1 rounded-full">
+        <span className="ml-2 bg-black text-white text-sm px-2 py-1 rounded-full">
           {cart.reduce((total, item) => total + item.quantity, 0)}
         </span>
       )}
