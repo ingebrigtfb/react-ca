@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
+import { useCart } from "../../context/CartContext";
 
 const ProductHome = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -31,9 +33,6 @@ const ProductHome = () => {
     fetchProducts();
   }, []);
 
-  const addToCart = (product) => {
-    console.log("Added to cart:", product.title);
-  };
 
   if (loading) return <p className="text-center text-xl">Loading products...</p>;
   if (error) return <p className="text-red-500 text-center">{error}</p>;
@@ -51,7 +50,7 @@ const ProductHome = () => {
           <h2 className="text-lg font-semibold mt-2">{product.title}</h2>
           <p className="text-gray-600">{product.description}</p>
 
-          {/* Pricing Section */}
+       
           <div className="mt-2">
             {product.price !== product.discountedPrice ? (
               <p>
@@ -69,13 +68,13 @@ const ProductHome = () => {
 
           <button
             onClick={() => addToCart(product)}
-            className="bg-blue-500 text-white px-4 py-2 mt-3 rounded hover:bg-blue-600 w-full"
+            className="bg-blue-500 text-white px-4 py-2 mt-3 rounded hover:bg-blue-600 w-full cursor-pointer"
           >
-            Add to Cart 🛒
+            Add to Cart
           </button>
           <Link
             to={`/product/${product.id}`}
-            className="block text-center mt-2 text-blue-500 hover:underline"
+            className="block text-center mt-2 text-blue-500"
           >
             View Details
           </Link>

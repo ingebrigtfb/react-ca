@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { FaShoppingCart } from "react-icons/fa";
+import Cart from "./Cart";
 
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
                     <Link to="/contact" className="text-lg">Contact Us</Link> 
                 </li>
                 <li>
-                    <Link to="/cart" className="text-white"><FaShoppingCart className="text-2xl inline-block" /></Link>
+                    <Cart />
                 </li>
             </ul>
             </nav>

@@ -1,3 +1,4 @@
+import ContactForm from "../components/form/ContactForm";
 
 const Contact = () => {
     return ( 
@@ -14,7 +15,7 @@ const Contact = () => {
             <p>123 Dont Visit, City, Country</p>
             <h2 className="text-2xl">💬 Send Us a Message</h2>
             <p>Have a question? Fill out the form below, and we’ll get back to you as soon as possible.</p>
-
+            <ContactForm />
 
 
 
