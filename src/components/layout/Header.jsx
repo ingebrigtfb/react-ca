@@ -6,7 +6,7 @@ import logo from "/src//assets/logo-ecom.png"
 const Header = () => {
     return (
         <header className="bg-white sticky top-0 z-50">
-            <div className="flex flex-row justify-between px-6 items-center h-[140px] max-w-[1400px] mx-auto">
+            <div className="flex flex-row justify-between px-6 items-center h-[120px] md:h-[140px] max-w-[1400px] mx-auto">
             <div className="text-black">
                 <Link to="/">
                 <img src={logo} alt="Logo" className="w-28 md:w-42 h-auto" /></Link>
