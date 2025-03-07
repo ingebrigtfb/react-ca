@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { useCart } from "../../context/CartContext";
+import SearchBar from "./SearchBar";
 
 const ProductHome = () => {
   const [products, setProducts] = useState([]);
@@ -38,6 +39,9 @@ const ProductHome = () => {
   if (error) return <p className="text-red-500 text-center">{error}</p>;
 
   return (
+    <div>
+      <SearchBar products={products}/>
+      
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
       {products.map((product) => (
         <div key={product.id} className="bg-white shadow-md rounded-lg p-4">
@@ -80,6 +84,7 @@ const ProductHome = () => {
           </Link>
         </div>
       ))}
+    </div>
     </div>
   );
 };
