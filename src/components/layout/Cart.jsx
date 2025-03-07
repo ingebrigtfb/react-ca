@@ -11,7 +11,7 @@ const Cart = () => {
       onClick={() => navigate("/checkout")}
       className="relative flex items-center"
     >
-      <FaShoppingCart className="text-2xl cursor-pointer"></FaShoppingCart>
+      <FaShoppingCart className="text-xl md:text-2xl cursor-pointer"></FaShoppingCart>
       {cart.length > 0 && (
         <span className="ml-2 bg-black text-white text-sm px-2 py-1 rounded-full">
           {cart.reduce((total, item) => total + item.quantity, 0)}

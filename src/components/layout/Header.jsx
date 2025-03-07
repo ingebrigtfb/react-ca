@@ -9,15 +9,15 @@ const Header = () => {
             <div className="flex flex-row justify-between px-6 items-center h-[140px] max-w-[1400px] mx-auto">
             <div className="text-black">
                 <Link to="/">
-                <img src={logo} alt="Logo" className="w-42 h-auto" /></Link>
+                <img src={logo} alt="Logo" className="w-28 md:w-42 h-auto" /></Link>
             </div>
             <nav>
             <ul className="flex flex-row gap-6 text-black">
                 <li>
-                    <Link to="/" className="text-lg">Home</Link>
-                </li>
+                    <Link to="/" className="text-sm md:text-lg">Home</Link>
+                </li>   
                 <li>
-                    <Link to="/contact" className="text-lg">Contact Us</Link> 
+                    <Link to="/contact" className="text-sm md:text-lg">Contact</Link> 
                 </li>
                 <li>
                     <Cart />

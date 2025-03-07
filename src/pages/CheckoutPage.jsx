@@ -37,7 +37,7 @@ const CheckoutPage = () => {
       <h2 className="text-2xl font-bold text-center mb-4">Your Cart</h2>
 
       {cart.length === 0 ? (
-        <p className="text-center text-gray-500">Your cart is empty/void/blank/vacant/hallow/barren/unoccupied/devoid.</p>
+        <p className="text-center text-sm md:text-lg text-gray-500">Your cart is empty/void/blank/vacant/hallow/barren/unoccupied.</p>
       ) : (
         cart.map((item) => (
           <div key={item.id} className="flex justify-between items-center p-2 border-b">
